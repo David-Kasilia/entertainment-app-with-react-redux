@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import  seriesReducer  from "./series/series";
+import moviesReducer from "./movies/movies";
 
 
 const store = configureStore({ 
     reducer: { 
-        allSeries :  seriesReducer
+        allSeries :  seriesReducer,
+        allMovies :  moviesReducer
     }
 })
 
